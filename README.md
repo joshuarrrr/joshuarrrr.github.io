@@ -1,1 +1,1 @@
-# joshuarrrr.github.io
+# Exploring Digital Humanities
