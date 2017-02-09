@@ -15,6 +15,7 @@
 # in the templates via {{ site.myvariable }}.
 title: Digital Humanities Playground
 email: josh@joshromero.com
+author: Josh Romero
 description: > # this means to ignore newlines until "baseurl:"
   Experiments with Jeklyll and GitHub Pages
 baseurl: "" # the subpath of your site, e.g. /blog
