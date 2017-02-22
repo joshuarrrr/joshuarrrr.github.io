@@ -3,8 +3,12 @@
 ---
 @charset "utf-8";
 
+@import "palette";
+// @import url('https://fonts.googleapis.com/css?family=Coda:800|Righteous|Sanchez|Share+Tech+Mono|Share:700');
+@import url('https://fonts.googleapis.com/css?family=Righteous|Sanchez');
+
 // Our variables
-$base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$base-font-family: Sanchez, "Helvetica Neue", Helvetica, Arial, sans-serif;
 $base-font-size:   16px;
 $base-font-weight: 400;
 $small-font-size:  $base-font-size * 0.875;
@@ -12,11 +16,11 @@ $base-line-height: 1.5;
 
 $spacing-unit:     30px;
 
-$text-color:       #111;
-$background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
+$text-color:       $color1;
+$background-color: $color3;
+$brand-color:      $color2;
 
-$grey-color:       #828282;
+$grey-color:       $color2;
 $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark:  darken($grey-color, 25%);
 

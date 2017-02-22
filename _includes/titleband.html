@@ -1,0 +1,60 @@
+{% if page.url == "/" %}
+<div class="main homepage">
+{% else %}
+<div class="main">
+{% endif %}
+	<div class="title-band">
+	  <span>Digital</span>
+	  <div class="small-text">
+	    <span class="humanities">Humanities</span>
+	    <span class="journalism">Journalism</span>
+	  </div>
+	  <span class="upside-down">Digital</span>
+	</div>
+	<div class="tree-left">
+		  {% if page.url != "/" %}
+		  <div class="box">
+		  	<div class="box-inner">
+		  		<h2><a href="/">Home</a></h2>
+		  	</div>
+		  </div>
+		  {% endif %}
+		  <div class="box">
+		  	<div class="box-inner">
+		  		<h2><a href="/about/">About</a></h2>
+		  	</div>
+		  </div>
+		  <div class="box">
+		  	<div class="box-inner">
+		  		<h2><a href="/resume/">Résumé</a></h2>
+		  	</div>
+		  </div>
+	  </div>
+	<div class="tree-right">
+		  <div class="box">
+		  	<div class="box-inner">
+		  		<h2><a href="/fellowship/">Fellowship</a></h2>
+		  	</div>
+		  </div>
+		  <div class="box big-box">
+		  	<div class="box-inner">
+		  		<h2><a href="">Blog Posts</a></h2>
+		  		{% if page.url == "/" %}
+		  		<div>
+			  		  <ul class="tilt-post-list">
+					    {% for post in site.posts %}
+					      <li>
+					        <span class="tilt-post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+					        <h3>
+					          <a class="tilt-post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+					        </h3>
+					      </li>
+					    {% endfor %}
+					  </ul>
+			  	</div>
+			  	{% endif %}
+		  	</div>
+		  </div>
+	  </div>
+</div>

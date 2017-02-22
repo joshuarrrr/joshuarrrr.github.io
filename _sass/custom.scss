@@ -1,3 +1,7 @@
+a:visited {
+  color: $brand-color;
+}
+
 .footer-col-1 {
   text-align: left;
   width: -webkit-calc(33% - (#{$spacing-unit} / 2));
@@ -15,4 +19,135 @@
   float: right;
   width: -webkit-calc(33% - (#{$spacing-unit} / 2));
   width:         calc(33% - (#{$spacing-unit} / 2));
+}
+
+.main {
+transform: rotate(85deg);
+position: absolute;
+left: 15%;
+transform-origin: top left;
+}
+
+.title-band {
+  font-size: 9.2vh;
+  font-family: 'Righteous', sans-serif;
+  text-transform: uppercase;
+  line-height: 1em;
+  text-align: center;
+  color: $color4;
+  width: 96vh;
+  position: relative;
+  left: 1.5vh;
+
+  .small-text {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    font-size: .4em;
+    line-height: 1em;
+  }
+
+  .humanities {
+    position: absolute;
+    top: -1em;
+    letter-spacing: .7px;
+    left: 1.26px;
+  }
+
+  .journalism {
+    position: relative;
+    display: inline-block;
+    transform: rotate(180deg);
+    text-align: center;
+    top: 0px;
+    color: $color5;
+  }
+
+  .upside-down {
+    transform: rotate(180deg);
+    display: inline-block;
+    position: relative;
+    top: 0px;
+    color: $color5;
+  }
+
+}
+
+.tree-left {
+  position: absolute;
+  left: -15vh;
+  transform: rotate(-90deg);
+  transform-origin: top right;
+}
+
+.tree-right {
+  position: absolute;
+  transform: rotate(-90deg);
+  left: 33vh;
+  transform-origin: top right;
+}
+
+.box {
+  
+  display: block;
+  // float: left;
+  // transform: rotate(-90deg);
+  // transform-origin: top right;
+
+  h2 {
+    font-size: 2em;
+    // font-size: 2.4vh;
+    // font-family: 'Sanchez', serif;
+    font-family: 'Righteous', sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    line-height: 1;
+
+    a {
+      color: $color2;
+    }
+
+    a:hover {
+      text-shadow: -1px 1px 8px $color3, 1px -1px 8px $color1;
+      text-decoration: none;
+    }
+  }
+
+  .box-inner {
+    box-sizing: border-box;
+    border: 3px solid $color2;
+    padding: 1em;
+    margin: .75em 1em;
+    display: inline-block;
+    overflow: hidden;
+    // transform: rotate(-85deg);
+  }
+}
+
+.tree-left {
+  text-align: right;
+}
+
+.tilt-post-list li {
+  margin-bottom: 30px;
+  display: block;
+  width: 150px;
+  float: left;
+  transform: rotate(5deg);
+  margin: 10px;
+  transform-origin: top left;
+}
+
+.homepage {
+  left: 25%;
+
+  .big-box .box-inner {
+    width: 66vw;
+  }
+
+  .tree-right {
+    left: 26vh;
+    top: 0;
+    transform-origin: top left;
+  }
 }
