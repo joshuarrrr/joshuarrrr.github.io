@@ -6,6 +6,10 @@ a:hover {
   cursor: pointer;
 }
 
+.post-content p {
+  font-size: 18px;
+}
+
 .footer-col-1 {
   text-align: left;
   width: -webkit-calc(33% - (#{$spacing-unit} / 2));
